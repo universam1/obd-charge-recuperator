@@ -1,0 +1,1023 @@
+Normal length query detected
+Query string: 015E1
+Clearing input serial buffer
+Sending the following command/query: 015E1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 4
+Normal length query detected
+Query string: 01041
+Clearing input serial buffer
+Sending the following command/query: 01041
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: 4
+Received: 4104
+No error detected
+        Received char: 6
+Received: 41046
+No error detected
+        Received char: D
+Received: 41046D
+No error detected
+        Received char: \r
+Received: 41046D
+No error detected
+        Received char: \r
+Received: 41046D
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 41046D
+Expected response header: 4104
+Single response detected
+64-bit response: 
+        responseByte_0: 109
+        responseByte_1: 0
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+Engine Load: 42
+Received: 41046D
+ELM_SUCCESS
+Service: 1
+PID: 3
+Normal length query detected
+Query string: 01031
+Clearing input serial buffer
+Sending the following command/query: 01031
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 12
+Normal length query detected
+Query string: 010C1
+Clearing input serial buffer
+Sending the following command/query: 010C1
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: C
+Received: 410C
+No error detected
+        Received char: 1
+Received: 410C1
+No error detected
+        Received char: 0
+Received: 410C10
+No error detected
+        Received char: 2
+Received: 410C102
+No error detected
+        Received char: 8
+Received: 410C1028
+No error detected
+        Received char: \r
+Received: 410C1028
+No error detected
+        Received char: \r
+Received: 410C1028
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 410C1028
+Expected response header: 410C
+Single response detected
+64-bit response: 
+        responseByte_0: 40
+        responseByte_1: 16
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+RPM: 1034
+Received: 410C1028
+ELM_SUCCESS
+Service: 1
+PID: 94
+Normal length query detected
+Query string: 015E1
+Clearing input serial buffer
+Sending the following command/query: 015E1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 4
+Normal length query detected
+Query string: 01041
+Clearing input serial buffer
+Sending the following command/query: 01041
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: 4
+Received: 4104
+No error detected
+        Received char: 6
+Received: 41046
+No error detected
+        Received char: D
+Received: 41046D
+No error detected
+        Received char: \r
+Received: 41046D
+No error detected
+        Received char: \r
+Received: 41046D
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 41046D
+Expected response header: 4104
+Single response detected
+64-bit response: 
+        responseByte_0: 109
+        responseByte_1: 0
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+Engine Load: 42
+Received: 41046D
+ELM_SUCCESS
+Service: 1
+PID: 3
+Normal length query detected
+Query string: 01031
+Clearing input serial buffer
+Sending the following command/query: 01031
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 12
+Normal length query detected
+Query string: 010C1
+Clearing input serial buffer
+Sending the following command/query: 010C1
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: C
+Received: 410C
+No error detected
+        Received char: 1
+Received: 410C1
+No error detected
+        Received char: 0
+Received: 410C10
+No error detected
+        Received char: 3
+Received: 410C103
+No error detected
+        Received char: 2
+Received: 410C1032
+No error detected
+        Received char: \r
+Received: 410C1032
+No error detected
+        Received char: \r
+Received: 410C1032
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 410C1032
+Expected response header: 410C
+Single response detected
+64-bit response: 
+        responseByte_0: 50
+        responseByte_1: 16
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+RPM: 1036
+Received: 410C1032
+ELM_SUCCESS
+Service: 1
+PID: 94
+Normal length query detected
+Query string: 015E1
+Clearing input serial buffer
+Sending the following command/query: 015E1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 4
+Normal length query detected
+Query string: 01041
+Clearing input serial buffer
+Sending the following command/query: 01041
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: 4
+Received: 4104
+No error detected
+        Received char: 6
+Received: 41046
+No error detected
+        Received char: 6
+Received: 410466
+No error detected
+        Received char: \r
+Received: 410466
+No error detected
+        Received char: \r
+Received: 410466
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 410466
+Expected response header: 4104
+Single response detected
+64-bit response: 
+        responseByte_0: 102
+        responseByte_1: 0
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+Engine Load: 40
+Received: 410466
+ELM_SUCCESS
+Service: 1
+PID: 3
+Normal length query detected
+Query string: 01031
+Clearing input serial buffer
+Sending the following command/query: 01031
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 12
+Normal length query detected
+Query string: 010C1
+Clearing input serial buffer
+Sending the following command/query: 010C1
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: C
+Received: 410C
+No error detected
+        Received char: 1
+Received: 410C1
+No error detected
+        Received char: 0
+Received: 410C10
+No error detected
+        Received char: 8
+Received: 410C108
+No error detected
+        Received char: 0
+Received: 410C1080
+No error detected
+        Received char: \r
+Received: 410C1080
+No error detected
+        Received char: \r
+Received: 410C1080
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 410C1080
+Expected response header: 410C
+Single response detected
+64-bit response: 
+        responseByte_0: 128
+        responseByte_1: 16
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+RPM: 1056
+Received: 410C1080
+ELM_SUCCESS
+Service: 1
+PID: 94
+Normal length query detected
+Query string: 015E1
+Clearing input serial buffer
+Sending the following command/query: 015E1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 4
+Normal length query detected
+Query string: 01041
+Clearing input serial buffer
+Sending the following command/query: 01041
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: 4
+Received: 4104
+No error detected
+        Received char: 5
+Received: 41045
+No error detected
+        Received char: E
+Received: 41045E
+No error detected
+        Received char: \r
+Received: 41045E
+No error detected
+        Received char: \r
+Received: 41045E
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 41045E
+Expected response header: 4104
+Single response detected
+64-bit response: 
+        responseByte_0: 94
+        responseByte_1: 0
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+Engine Load: 36
+Received: 41045E
+ELM_SUCCESS
+Service: 1
+PID: 3
+Normal length query detected
+Query string: 01031
+Clearing input serial buffer
+Sending the following command/query: 01031
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 12
+Normal length query detected
+Query string: 010C1
+Clearing input serial buffer
+Sending the following command/query: 010C1
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: C
+Received: 410C
+No error detected
+        Received char: 0
+Received: 410C0
+No error detected
+        Received char: D
+Received: 410C0D
+No error detected
+        Received char: 5
+Received: 410C0D5
+No error detected
+        Received char: E
+Received: 410C0D5E
+No error detected
+        Received char: \r
+Received: 410C0D5E
+No error detected
+        Received char: \r
+Received: 410C0D5E
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 410C0D5E
+Expected response header: 410C
+Single response detected
+64-bit response: 
+        responseByte_0: 94
+        responseByte_1: 13
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+RPM: 855
+Received: 410C0D5E
+ELM_SUCCESS
+Service: 1
+PID: 94
+Normal length query detected
+Query string: 015E1
+Clearing input serial buffer
+Sending the following command/query: 015E1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 4
+Normal length query detected
+Query string: 01041
+Clearing input serial buffer
+Sending the following command/query: 01041
+Received: 
+No error detected
+        Received char: 4
+Received: 4
+No error detected
+        Received char: 1
+Received: 41
+No error detected
+        Received char: 0
+Received: 410
+No error detected
+        Received char: 4
+Received: 4104
+No error detected
+        Received char: 6
+Received: 41046
+No error detected
+        Received char: 0
+Received: 410460
+No error detected
+        Received char: \r
+Received: 410460
+No error detected
+        Received char: \r
+Received: 410460
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: 410460
+Expected response header: 4104
+Single response detected
+64-bit response: 
+        responseByte_0: 96
+        responseByte_1: 0
+        responseByte_2: 0
+        responseByte_3: 0
+        responseByte_4: 0
+        responseByte_5: 0
+        responseByte_6: 0
+        responseByte_7: 0
+Engine Load: 37
+Received: 410460
+ELM_SUCCESS
+Service: 1
+PID: 3
+Normal length query detected
+Query string: 01031
+Clearing input serial buffer
+Sending the following command/query: 01031
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 12
+Normal length query detected
+Query string: 010C1
+Clearing input serial buffer
+Sending the following command/query: 010C1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 94
+Normal length query detected
+Query string: 015E1
+Clearing input serial buffer
+Sending the following command/query: 015E1
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+        Received char: D
+Received: NOD
+No error detected
+        Received char: A
+Received: NODA
+No error detected
+        Received char: T
+Received: NODAT
+No error detected
+        Received char: A
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: \r
+Received: NODATA
+No error detected
+        Received char: >
+Delimiter found.
+All chars received: NODATA
+ELM responded with errror "NO DATA"
+Received: NODATA
+ERROR: ELM_NO_DATA
+Service: 1
+PID: 4
+Normal length query detected
+Query string: 01041
+Clearing input serial buffer
+Sending the following command/query: 01041
+Received: 
+No error detected
+Received: 
+No error detected
+Received: 
+No error detected
+        Received char: N
+Received: N
+No error detected
+        Received char: O
+Received: NO
+No error detected
+        Received char: _
+Received: NO
+No error detected
+ *  Das Terminal wird von Aufgaben wiederverwendet, drücken Sie zum Schließen eine beliebige Taste. 

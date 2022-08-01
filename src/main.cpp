@@ -28,9 +28,6 @@ OLEDDisplayUi ui(&display);
 
 int screenW = 128;
 int screenH = 64;
-int clockCenterX = screenW / 2;
-int clockCenterY = ((screenH - 16) / 2) + 16; // top yellow part is 16 px height
-
 typedef enum
 {
   MOTOR_STATE,
@@ -39,7 +36,7 @@ typedef enum
   MOTOR_LOAD,
 } state_t;
 
-uint8_t state = MOTOR_STATE;
+uint8_t state = MOTOR_RPM;
 
 struct Car
 {
@@ -245,12 +242,13 @@ void setupOLED()
   display.flipScreenVertically();
 }
 
+uint8_t addr[] = {0x66, 0x1E, 0x21, 0x00, 0xAA, 0xFE};
 void setupOBD()
 {
-  ELM_PORT.begin("ArduHUD", true);
   ELM_PORT.setPin("1234");
-
-  bool connected = ELM_PORT.connect("OBDII");
+  ELM_PORT.begin("ArduHUD", true);
+  bool connected = ELM_PORT.connect(addr);
+  // bool connected = ELM_PORT.connect("OBDII");
 
   if (connected)
   {
@@ -276,7 +274,7 @@ void setupOBD()
   Serial.println("Connected to ELM327");
 }
 
-void getOBD(void *parameters)
+void getOBDDummy(void *parameters)
 {
   for (;;)
   {
@@ -315,77 +313,99 @@ void getOBD(void *parameters)
     if (state > MOTOR_LOAD)
       state = MOTOR_STATE;
   }
+}
 
-  switch (state)
+void getOBD(void *parameters)
+{
+  for (;;)
   {
-  case MOTOR_STATE:
-  {
-    uint16_t fuelSystemStatus = myELM327.fuelSystemStatus();
+    vTaskDelay(pdMS_TO_TICKS(10));
 
-    if (myELM327.nb_rx_state == ELM_SUCCESS)
+    switch (state)
     {
-      // https://en.wikipedia.org/w/index.php?title=OBD-II_PIDs&section=18#Service_01_PID_03_-_Fuel_system_status
-      myCar.engineOn = fuelSystemStatus & (1 << 0) == 0;
-      myCar.deceleration = fuelSystemStatus & (1 << 2) == 1;
-      Serial.print("Engine On: ");
-      Serial.println(myCar.engineOn);
-      Serial.print("Deceleration: ");
-      Serial.println(myCar.deceleration);
-      state++;
-    }
-    else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
-      myELM327.printError();
-    break;
-  }
-
-  case MOTOR_RPM:
-  {
-    float tempRPM = myELM327.rpm();
-
-    if (myELM327.nb_rx_state == ELM_SUCCESS)
+    case MOTOR_STATE:
     {
-      myCar.engineRPM = tempRPM;
-      Serial.print("RPM: ");
-      Serial.println(myCar.engineRPM);
-      state++;
-    }
-    else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
-      myELM327.printError();
-    break;
-  }
+      uint16_t fuelSystemStatus = myELM327.fuelSystemStatus();
 
-  case FUEL_RATE:
-  {
-    float tempFuelRate = myELM327.fuelRate();
-    if (myELM327.nb_rx_state == ELM_SUCCESS)
-    {
-      myCar.fuelRate = tempFuelRate;
-      Serial.print("Fuel Rate: ");
-      Serial.println(myCar.fuelRate);
-      state++;
+      if (myELM327.nb_rx_state == ELM_SUCCESS)
+      {
+        // https://en.wikipedia.org/w/index.php?title=OBD-II_PIDs&section=18#Service_01_PID_03_-_Fuel_system_status
+        WriterLock(rwLock);
+        myCar.engineOn = fuelSystemStatus & (1 << 0) == 0;
+        myCar.deceleration = fuelSystemStatus & (1 << 2) == 1;
+        WriterUnlock(rwLock);
+        Serial.print("Engine On: ");
+        Serial.println(myCar.engineOn);
+        Serial.print("Deceleration: ");
+        Serial.println(myCar.deceleration);
+        Serial.print("Status: ");
+        Serial.println(fuelSystemStatus);
+        state++;
+      }
+      else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
+        state++;
+        myELM327.printError();
+      break;
     }
-    else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
-      myELM327.printError();
-    break;
-  }
 
-  case MOTOR_LOAD:
-  {
-    float tempEngineLoad = myELM327.engineLoad();
-    if (myELM327.nb_rx_state == ELM_SUCCESS)
+    case MOTOR_RPM:
     {
-      myCar.engineLoad = tempEngineLoad;
-      Serial.print("Engine Load: ");
-      Serial.println(myCar.engineLoad);
-      state++;
+      float tempRPM = myELM327.rpm();
+
+      if (myELM327.nb_rx_state == ELM_SUCCESS)
+      {
+        WriterLock(rwLock);
+        myCar.engineRPM = tempRPM;
+        WriterUnlock(rwLock);
+        Serial.print("RPM: ");
+        Serial.println(myCar.engineRPM);
+        state++;
+      }
+      else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
+        state++;
+        myELM327.printError();
+      break;
     }
-    else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
-      myELM327.printError();
-    break;
+
+    case FUEL_RATE:
+    {
+      float tempFuelRate = myELM327.fuelRate();
+      if (myELM327.nb_rx_state == ELM_SUCCESS)
+      {
+        WriterLock(rwLock);
+        myCar.fuelRate = tempFuelRate;
+        WriterUnlock(rwLock);
+        Serial.print("Fuel Rate: ");
+        Serial.println(myCar.fuelRate);
+        state++;
+      }
+      else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
+        state++;
+        myELM327.printError();
+      break;
+    }
+
+    case MOTOR_LOAD:
+    {
+      float tempEngineLoad = myELM327.engineLoad();
+      if (myELM327.nb_rx_state == ELM_SUCCESS)
+      {
+        WriterLock(rwLock);
+        myCar.engineLoad = tempEngineLoad;
+        WriterUnlock(rwLock);
+        Serial.print("Engine Load: ");
+        Serial.println(myCar.engineLoad);
+        state++;
+      }
+      else if (myELM327.nb_rx_state != ELM_GETTING_MSG)
+        state++;
+        myELM327.printError();
+      break;
+    }
+    }
+    if (state > MOTOR_LOAD)
+      state = MOTOR_STATE;
   }
-  }
-  if (state > MOTOR_LOAD)
-    state = MOTOR_STATE;
 }
 
 void updateOLED(void *parameters)
@@ -405,7 +425,7 @@ void setup()
   setupOLED();
 
   randomSeed(analogRead(0));
-  // setupOBD();
+  setupOBD();
 
   // Do timing specific work on another core
   xTaskCreatePinnedToCore(
